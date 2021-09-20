@@ -450,7 +450,7 @@ export class ChessBoard extends React.Component<ChessBoardProps, ChessBoardState
                             border: '1px solid white',
                         }}>
                             <button style={{width: '100%', height: '100%', backgroundColor: 'transparent', border: '5px solid #888'}}>
-                                <p>+</p>
+                                <h5>+</h5>
                             </button>
                         </div>
                         {this.state.blackGrave.map((piece, i) => (
@@ -460,7 +460,7 @@ export class ChessBoard extends React.Component<ChessBoardProps, ChessBoardState
                                 border: '1px solid white'
                             }}>
                                 <button style={{width: '100%', height: '100%', backgroundColor: 'transparent', border: piece.color === 'black' ? '5px solid #888':'5px solid #eee'}} key={i}>
-                                    <p>{piece.type[0].toUpperCase()}</p>
+                                    <h5>{piece.type[0].toUpperCase()}</h5>
                                 </button>
                             </div>
                         ))}
@@ -490,7 +490,7 @@ export class ChessBoard extends React.Component<ChessBoardProps, ChessBoardState
                             border: '1px solid white',
                         }}>
                             <button style={{width: '100%', height: '100%', backgroundColor: 'transparent', border: '5px solid #eee'}}>
-                                <p>+</p>
+                                <h5>+</h5>
                             </button>
                         </div>
                         {this.state.whiteGrave.map((piece, i) => (
@@ -500,7 +500,7 @@ export class ChessBoard extends React.Component<ChessBoardProps, ChessBoardState
                                 border: '1px solid white',
                             }}>
                                 <button style={{width: '100%', height: '100%', backgroundColor: 'transparent', border: piece.color === 'black' ? '5px solid #888':'5px solid #eee'}} key={i}>
-                                    <p>{piece.type[0].toUpperCase()}</p>
+                                    <h5>{piece.type[0].toUpperCase()}</h5>
                                 </button>
                             </div>
                         ))}
