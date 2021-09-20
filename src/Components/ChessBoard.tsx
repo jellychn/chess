@@ -465,7 +465,7 @@ export class ChessBoard extends React.Component<ChessBoardProps, ChessBoardState
                             </div>
                         ))}
                     </div>
-                    <div style={{margin: 'auto'}}>
+                    <div style={{margin: 'auto', boxShadow: '0 0 30px 10px #eee'}}>
                         {this.state.chessBoard.map((ranks, rank) => (
                             <div style={{display:'flex'}} key={rank}>
                                 {Object.values(ranks).map((files, file) => (
